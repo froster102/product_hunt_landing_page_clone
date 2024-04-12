@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+
+.global-nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background: #fff;
+    min-height: 64px;
+    max-height: 64px;
+    box-shadow: inset 0 -0.5px 0 0 #d7d7d7;
+}
+
+.global-nav {
+    padding-left: 1.5em;
+    padding-right: 2em;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.logo svg{
+    height: 32px;
+    width: 32px;
+}
+
+.search {
+    font-weight: 400;
+    position: relative;
+}
+
+.search input{
+    appearance: none;
+    box-sizing: border-box;
+    color: #4B586C;
+    height: 32px;
+    padding: 0 20px 0 40px;
+    width: 100%;
+    min-width: 164px;
+    max-width: 220px;
+    background-color: #f5f8ff;
+    border-radius: 100px;
+    border: 0 solid #fff;
+    font-size: 100%;
+}
+
+.search svg {
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.nav-mid .navigation{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav-mid .navigation a {
+    text-decoration: none;
+    color: rgb(75 88 124);
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    color: rgb(75 88 124);
+}
+
+.btn {
+    background-color: #fef6f2;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #e12e0d;
+}
+
+.container {
+    display: flex;
+    max-width: 1216px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.mb {
+    margin-bottom: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.section-header-content {
+    display: flex;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    justify-content: flex-start;
+    gap:.75rem;
+    border-bottom: 1px solid #d8e1ec;
+}
+
+.section-header-options {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.section-header-headline {
+    color: rgb(33 41 60);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    flex: 1 1 0%;
+}
+
+.section-header-options a:first-child {
+    text-decoration: none;
+    color: rgb(255 97 84);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.section-header-options span {
+    width: 1px;
+    height: 14px;
+    background-color: #eef2ff;
+}
+
+.section-header-options a {
+    text-decoration: none;
+    color: rgb(75 88 124);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.note {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(75 88 124);
+    margin-bottom: 1.5em;
+}
+
+.note a {
+    text-decoration: none;
+    color: rgb(0 94 246);
+}
+
+.section-item {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    border-radius: 8px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-item img {
+    border-radius: 4px;
+}
+
+.section-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    margin-right: 1rem;
+    flex: 1 1 0%;
+}
+
+
+.section-text-top {
+    display: inline;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.section-text-top strong {
+    font-weight: 600;
+}
+
+.section-text-top a :first-child {
+    text-decoration: none;
+    color: rgb(33 41 60);
+}
+
+.section-text-top a {
+    display: inline-block;
+    margin-left: 6px;
+    position: relative;
+    text-decoration: none;
+}
+
+.section-text-top span {
+    opacity: .5;
+}
+
+.section-text-bottom {
+    display: flex;
+    gap: .5rem;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(75 88 124);
+    font-weight: 400;
+}
+
+.section-text-bottom a {
+    text-decoration: none;
+    color: rgb(75 88 124);
+}
+
+.section-text-bottom-comments {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.section-text-bottom-comments svg {
+    width: 13px;
+    height: 12px;
+    stroke: #4b587c;
+}
+
+.vote-btn {
+    position: relative;
+    border: 1px solid #d9e1ec;
+    transition: all .3s ease;
+    background: #fff;
+    max-height: 48px;
+    max-width: 48px;
+    min-width: 48px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.signup-container {
+    background: rgba(255, 97, 84, .1);
+    margin-top: .5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border-radius: 4px;
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.signup-container-text {
+    color: rgb(33 41 60);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    flex: 1 1 0%;
+}
+
+.signup-btn {
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    background: #ff6154;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.show-more-btn {
+    appearance: none;
+    text-align: center;
+    appearance: none;
+    outline: none;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    color: #21293c;
+    background: #fff;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    border: 1px solid #d9e1ec;
+    padding: 8px 16px;
+}
+
+.hall-of-fame {
+    display: block ;
+    position: relative;
+    border: 1px solid #d9e1ec;
+    background: url(./src/golden-kitty-homepage-section-banner.avif);
+    background-size: cover;
+    background-position: 50%;
+    margin: 2rem 0;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 4px;
+}
+
+.hall-of-fame-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.fame-item-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+    background: url(https://ph-static.imgix.net/static/golden-kitty-wing-left.svg?auto=compress&auto=format&dpr=2&h=90&fit=max),url(https://ph-static.imgix.net/static/golden-kitty-wing-right.svg?auto=compress&auto=format&dpr=2&h=90&fit=max);
+    background-repeat: no-repeat;
+    background-position: 0, 100%;
+    background-size: auto 75%;
+}
+
+.fame-heading {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(33 41 60 );
+}
+
+.fame-title {
+    font-size: 36px;
+    line-height: 96.065%;
+    font-weight: 700;
+}
+
+.fame-year {
+    background: linear-gradient(181deg,#987c33 30.74%,#d0b046 60.31%,#987c33 84.12%);
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fame-item-bottom {
+    background: #000;
+    border-radius: 48px;
+    width: 200px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(255 255 255 );
+    font-weight: 700;
+    
+}
+
+.right-bar {
+    border-left: 1px solid #d9e1ec;
+    margin-left: 64px;
+    padding-left: 71px;
+    width: 280px;
+    flex: 1 1 0%;
+}
+
+.right-bar-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-bar-top-header {
+    color: rgb(75 88 124);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.header-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem  ;
+}
+
+.header-title {
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #21293c;
+}
+
+hr {
+    width: 100%;
+    border-bottom: 1px solid #999a9b;
+    height: 1px;
+    border: none;
+    margin: 1.5rem 0;
+}
+
+.footer {
+    margin-bottom: 40px;
+}
+
+.footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.footer-item {
+    color: #4b587c;
+    font-size: 12px;
+    padding: 2px;
+    font-weight: 400;
+}
+
+.footer-item::after {
+    content: " \00b7";
+}
+
+.footer-bottom {
+    color: #4b587c;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
